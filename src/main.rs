@@ -130,6 +130,10 @@ fn generate_rsa_keys(nb_bytes: &u32) {
     drop(file);
 }
 
+fn encrypt_message(message_to_encrypt: &String, rsa_key: &Option<String>, pem_file: &Option<PathBuf>) {
+    // TODO
+}
+
 fn main() {
     let cli = Cli::parse();
 
@@ -148,7 +152,7 @@ fn main() {
                     generate_rsa_keys(&nb_bytes);
                 },
                 TestSubCommands::EncryptMessage { message_to_encrypt, rsa_key, pem_file } => {
-                    encrypt_message(message_to_encrypt, rsa_key, pem_file)
+                    encrypt_message(&message_to_encrypt, &rsa_key, &pem_file);
                 }
             }
         }
