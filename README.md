@@ -1,3 +1,5 @@
+# Attention c'est probablement le pire repo Rust que vous avez vu de votre vie, mais bon... on apprend hein.
+
 Ce projet a été fait en Rust. Pour le lançer, un simple ```cargo install``` et ```cargo run``` devrait suffire.
 
 ## A noter qu'il est nécessaire d'avoir une installation de openssl sur sa machine.
